@@ -6,23 +6,21 @@ class Memory {
 
     fun loadAnimalsWords(): List<Words> {
         return listOf<Words>(
-            //Words("kotlin"),
-            //Words("java"),
-            //Words("python"),
-            //Words("swift")
-            //Words("tiger"),
-            //Words("fulg"),
-            //Words("bjørn"),
-            //Words("krokodille"),
-            //Words("slange"),
-            //Words("edderkop"),
-            Words("jeg elsker kotlin"),
-            Words("mit navn er egon"),
-            Words("tesla model s"),
-            //Words("mercedes amg"),
-            //Words("audi etron"),
-            //Words("bugatti"),
-
+            Words("new zealand"),
+            Words("saudi arabien"),
+            Words("sri lanka"),
+            Words("costa rica"),
+            Words("sierra leone"),
+            Words("danmark"),
+            Words("pakistan"),
+            Words("nepal"),
+            Words("spanien"),
+            Words("maldiverne"),
+            Words("argentina"),
+            Words("canada"),
+            Words("egypten"),
+            Words("england"),
+            Words("ungarn"),
 
             )
 
