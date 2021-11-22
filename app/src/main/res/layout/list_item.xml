@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tvItem"
+    android:orientation="vertical"
+    android:layout_width="25dp"
+    android:layout_height="40dp"
+    android:textSize="30dp"
+    android:textColor="@color/white"
+
+    android:gravity="center"/>
+
+
+

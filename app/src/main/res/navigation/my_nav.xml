@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.lykkehjultest.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/mainToPlayGame"
+            app:destination="@id/playGame" />
+    </fragment>
+    <fragment
+        android:id="@+id/playGame"
+        android:name="com.example.lykkehjultest.playGame"
+        android:label="fragment_play_game"
+        tools:layout="@layout/fragment_play_game" >
+        <action
+            android:id="@+id/playGameToTabt"
+            app:destination="@id/tabtFragment" />
+        <action
+            android:id="@+id/playGameToVundet"
+            app:destination="@id/vundetFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tabtFragment"
+        android:name="com.example.lykkehjultest.tabtFragment"
+        android:label="fragment_tabt"
+        tools:layout="@layout/fragment_tabt" >
+        <action
+            android:id="@+id/tabtToMain"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/vundetFragment"
+        android:name="com.example.lykkehjultest.vundetFragment"
+        android:label="fragment_vundet"
+        tools:layout="@layout/fragment_vundet" >
+        <action
+            android:id="@+id/vundetToMain"
+            app:destination="@id/mainFragment" />
+    </fragment>
+</navigation>
