@@ -88,7 +88,7 @@ class playGame : Fragment() {
 
 
         // Load words
-        val myDataset = Memory().loadWords()
+        val myDataset = Memory().loadAnimalsWords()
 
         // Pick a random element from dataset
         hemmeligtOrd = myDataset.random().toString()
@@ -284,15 +284,6 @@ class playGame : Fragment() {
     }
 
     companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment playGame.
-         */
-        // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
             playGame().apply {

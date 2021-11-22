@@ -4,21 +4,21 @@ import com.example.lykkehjultest.model.Words
 
 class Memory {
 
-    fun loadWords(): List<Words> {
+    fun loadAnimalsWords(): List<Words> {
         return listOf<Words>(
             //Words("kotlin"),
             //Words("java"),
             //Words("python"),
             //Words("swift")
-            Words("tiger"),
-            Words("fulg"),
-            Words("bjørn"),
-            Words("krokodille"),
-            Words("slange"),
-            Words("edderkop"),
-            //Words("jeg elsker kotlin"),
-            //Words("mit navn er egon"),
-            //Words("tesla model s"),
+            //Words("tiger"),
+            //Words("fulg"),
+            //Words("bjørn"),
+            //Words("krokodille"),
+            //Words("slange"),
+            //Words("edderkop"),
+            Words("jeg elsker kotlin"),
+            Words("mit navn er egon"),
+            Words("tesla model s"),
             //Words("mercedes amg"),
             //Words("audi etron"),
             //Words("bugatti"),

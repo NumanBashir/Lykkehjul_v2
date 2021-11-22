@@ -47,7 +47,7 @@ class MainFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         // Load words
-        val myDataset = Memory().loadWords()
+        val myDataset = Memory().loadAnimalsWords()
         println(myDataset)
 
         // Pick a random element from dataset
