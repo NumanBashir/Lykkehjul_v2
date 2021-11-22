@@ -1,6 +1,6 @@
-package com.example.lykkehjultest.data
+package com.example.lykkehjul_v2.data
 
-import com.example.lykkehjultest.model.Words
+import com.example.lykkehjul_v2.model.Words
 
 class Memory {
 

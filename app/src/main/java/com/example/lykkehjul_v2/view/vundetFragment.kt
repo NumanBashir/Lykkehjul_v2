@@ -1,4 +1,4 @@
-package com.example.lykkehjultest.view
+package com.example.lykkehjul_v2.view
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import androidx.navigation.Navigation
-import com.example.lykkehjultest.R
+import com.example.lykkehjul_v2.R
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -16,10 +16,10 @@ private const val ARG_PARAM2 = "param2"
 
 /**
  * A simple [Fragment] subclass.
- * Use the [tabtFragment.newInstance] factory method to
+ * Use the [vundetFragment.newInstance] factory method to
  * create an instance of this fragment.
  */
-class tabtFragment : Fragment() {
+class vundetFragment : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
@@ -37,7 +37,7 @@ class tabtFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_tabt, container, false)
+        return inflater.inflate(R.layout.fragment_vundet, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -45,9 +45,8 @@ class tabtFragment : Fragment() {
 
         val genstartSpilKnap: Button = view.findViewById(R.id.genstartKnap)
         genstartSpilKnap.setOnClickListener {
-            Navigation.findNavController(view).navigate(R.id.tabtToMain)
+            Navigation.findNavController(view).navigate(R.id.vundetToMain)
         }
-
     }
 
     companion object {
@@ -57,12 +56,12 @@ class tabtFragment : Fragment() {
          *
          * @param param1 Parameter 1.
          * @param param2 Parameter 2.
-         * @return A new instance of fragment tabtFragment.
+         * @return A new instance of fragment vundetFragment.
          */
         // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            tabtFragment().apply {
+            vundetFragment().apply {
                 arguments = Bundle().apply {
                     putString(ARG_PARAM1, param1)
                     putString(ARG_PARAM2, param2)

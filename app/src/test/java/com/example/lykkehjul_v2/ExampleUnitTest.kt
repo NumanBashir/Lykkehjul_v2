@@ -1,4 +1,4 @@
-package com.example.lykkehjultest
+package com.example.lykkehjul_v2
 
 import org.junit.Test
 

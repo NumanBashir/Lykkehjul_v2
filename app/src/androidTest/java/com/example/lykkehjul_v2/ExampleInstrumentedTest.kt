@@ -1,4 +1,4 @@
-package com.example.lykkehjultest
+package com.example.lykkehjul_v2
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

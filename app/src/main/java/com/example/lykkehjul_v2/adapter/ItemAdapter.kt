@@ -1,12 +1,12 @@
-package com.example.lykkehjultest.adapter
+package com.example.lykkehjul_v2.adapter
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.lykkehjultest.R
-import com.example.lykkehjultest.model.Words
+import com.example.lykkehjul_v2.R
+import com.example.lykkehjul_v2.model.Words
 
 class ItemAdapter(val data: List<Words>): RecyclerView.Adapter<ItemAdapter.ViewHolder>() {
 

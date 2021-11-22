@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/mainFragment"
-        android:name="com.example.lykkehjultest.view.MainFragment"
+        android:name="com.example.lykkehjul_v2.view.MainFragment"
         android:label="fragment_main"
         tools:layout="@layout/fragment_main" >
         <action
@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/playGame"
-        android:name="com.example.lykkehjultest.view.playGame"
+        android:name="com.example.lykkehjul_v2.view.playGame"
         android:label="fragment_play_game"
         tools:layout="@layout/fragment_play_game" >
         <action
@@ -28,7 +28,7 @@
     </fragment>
     <fragment
         android:id="@+id/tabtFragment"
-        android:name="com.example.lykkehjultest.view.tabtFragment"
+        android:name="com.example.lykkehjul_v2.view.tabtFragment"
         android:label="fragment_tabt"
         tools:layout="@layout/fragment_tabt" >
         <action
@@ -37,7 +37,7 @@
     </fragment>
     <fragment
         android:id="@+id/vundetFragment"
-        android:name="com.example.lykkehjultest.view.vundetFragment"
+        android:name="com.example.lykkehjul_v2.view.vundetFragment"
         android:label="fragment_vundet"
         tools:layout="@layout/fragment_vundet" >
         <action

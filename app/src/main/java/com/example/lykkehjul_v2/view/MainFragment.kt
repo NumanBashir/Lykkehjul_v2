@@ -1,4 +1,4 @@
-package com.example.lykkehjultest.view
+package com.example.lykkehjul_v2.view
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,8 +6,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.TextView
 import androidx.navigation.Navigation
-import com.example.lykkehjultest.R
+import com.example.lykkehjul_v2.R
+import com.example.lykkehjul_v2.data.Memory
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -16,11 +18,11 @@ private const val ARG_PARAM2 = "param2"
 
 /**
  * A simple [Fragment] subclass.
- * Use the [vundetFragment.newInstance] factory method to
+ * Use the [MainFragment.newInstance] factory method to
  * create an instance of this fragment.
  */
-class vundetFragment : Fragment() {
-    // TODO: Rename and change types of parameters
+class MainFragment : Fragment() {
+
     private var param1: String? = null
     private var param2: String? = null
 
@@ -30,6 +32,7 @@ class vundetFragment : Fragment() {
             param1 = it.getString(ARG_PARAM1)
             param2 = it.getString(ARG_PARAM2)
         }
+
     }
 
     override fun onCreateView(
@@ -37,16 +40,30 @@ class vundetFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_vundet, container, false)
+        return inflater.inflate(R.layout.fragment_main, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val genstartSpilKnap: Button = view.findViewById(R.id.genstartKnap)
-        genstartSpilKnap.setOnClickListener {
-            Navigation.findNavController(view).navigate(R.id.vundetToMain)
+        // Load words
+        val myDataset = Memory().loadAnimalsWords()
+        println(myDataset)
+
+        // Pick a random element from dataset
+        val randomElement2 = myDataset.random().toString()
+
+        // Seperate each letter into new char array
+        val charsOfWord2: CharArray = randomElement2.toCharArray()
+        println(charsOfWord2.contentToString())
+
+        val startSpilKnap: Button = view.findViewById(R.id.startSpilKnap)
+        val ordTilView: TextView = view.findViewById(R.id.ordTilView)
+
+        startSpilKnap.setOnClickListener {
+            Navigation.findNavController(view).navigate(R.id.mainToPlayGame)
         }
+
     }
 
     companion object {
@@ -56,12 +73,12 @@ class vundetFragment : Fragment() {
          *
          * @param param1 Parameter 1.
          * @param param2 Parameter 2.
-         * @return A new instance of fragment vundetFragment.
+         * @return A new instance of fragment MainFragment.
          */
         // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            vundetFragment().apply {
+            MainFragment().apply {
                 arguments = Bundle().apply {
                     putString(ARG_PARAM1, param1)
                     putString(ARG_PARAM2, param2)
