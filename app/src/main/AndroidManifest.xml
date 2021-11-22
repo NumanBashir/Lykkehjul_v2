@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LykkehjulTest">
         <activity
-            android:name=".MainActivity"
+            android:name=".view.MainActivity"
             android:windowSoftInputMode="adjustPan"
             android:exported="true">
             <intent-filter>

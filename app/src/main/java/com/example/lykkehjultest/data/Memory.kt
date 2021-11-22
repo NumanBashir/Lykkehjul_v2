@@ -1,6 +1,6 @@
-package com.example.lykkehjultest
+package com.example.lykkehjultest.data
 
-import android.provider.UserDictionary
+import com.example.lykkehjultest.model.Words
 
 class Memory {
 

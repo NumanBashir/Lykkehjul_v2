@@ -1,4 +1,4 @@
-package com.example.lykkehjultest
+package com.example.lykkehjultest.logic
 
 object LykkehjulLogic {
 

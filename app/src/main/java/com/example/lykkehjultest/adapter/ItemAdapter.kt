@@ -1,10 +1,12 @@
-package com.example.lykkehjultest
+package com.example.lykkehjultest.adapter
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.lykkehjultest.R
+import com.example.lykkehjultest.model.Words
 
 class ItemAdapter(val data: List<Words>): RecyclerView.Adapter<ItemAdapter.ViewHolder>() {
 
@@ -14,7 +16,7 @@ class ItemAdapter(val data: List<Words>): RecyclerView.Adapter<ItemAdapter.ViewH
         this.items = ArrayList()
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemAdapter.ViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
 
         /*val dataFromMemory = Memory().loadWords()
         hemmeligtOrd = dataFromMemory.random().toString()*/
@@ -25,7 +27,7 @@ class ItemAdapter(val data: List<Words>): RecyclerView.Adapter<ItemAdapter.ViewH
 
     }
 
-    override fun onBindViewHolder(holder: ItemAdapter.ViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.tvItem.text = data[position].text
 
     }

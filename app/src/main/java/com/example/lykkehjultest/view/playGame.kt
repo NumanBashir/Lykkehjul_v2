@@ -1,4 +1,4 @@
-package com.example.lykkehjultest
+package com.example.lykkehjultest.view
 
 import android.os.Bundle
 import android.text.TextUtils
@@ -13,6 +13,11 @@ import android.widget.Toast
 import androidx.navigation.Navigation
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.lykkehjultest.R
+import com.example.lykkehjultest.adapter.ItemAdapter
+import com.example.lykkehjultest.data.Memory
+import com.example.lykkehjultest.logic.LykkehjulLogic
+import com.example.lykkehjultest.model.Words
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER

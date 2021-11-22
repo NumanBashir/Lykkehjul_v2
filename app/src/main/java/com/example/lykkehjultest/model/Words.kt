@@ -1,4 +1,4 @@
-package com.example.lykkehjultest
+package com.example.lykkehjultest.model
 
 data class Words(val text: String) {
     override fun toString(): String {
