@@ -1,6 +1,7 @@
 package com.example.lykkehjul_v2.view
 
 import android.os.Bundle
+import android.os.Handler
 import android.text.TextUtils
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -41,7 +42,7 @@ class playGame : Fragment() {
     lateinit var nyRecyclerView: RecyclerView
     lateinit var OpenFragment: Button
 
-    var lives = 3
+    var lives = 5
     var points = 0
     var visHemmeligOrd = ""
     var underScoreOrd = mutableListOf<Words>()
@@ -49,6 +50,7 @@ class playGame : Fragment() {
     var hemmeligtOrd = ""
     var drejEllerIndtastState = true
     var randomOutcome = ""
+
 
     private var layoutManager: RecyclerView.LayoutManager? = null
     private var adapter: RecyclerView.Adapter<ItemAdapter.ViewHolder>? = null
@@ -96,9 +98,6 @@ class playGame : Fragment() {
 
         Toast.makeText(context,"Drej venligst hjulet", Toast.LENGTH_SHORT).show()
 
-        // Set textView to the random word
-        //ord.setText(secretOrd)
-
         drejHjulKnap = view.findViewById(R.id.drejHjul)
         wheelOutcomeDisplay = view.findViewById(R.id.wheelOutcome)
         gætBogstav = view.findViewById(R.id.gætBogstav)
@@ -130,6 +129,7 @@ class playGame : Fragment() {
 
         drejHjul()
         guessLetter()
+
 
 
     }
@@ -208,6 +208,8 @@ class playGame : Fragment() {
             } else {
                 Toast.makeText(context,"Du har ikke drejet hjulet endnu",Toast.LENGTH_SHORT).show()
             }
+
+
             tabtSpil()
             vundetSpil()
 
@@ -218,12 +220,12 @@ class playGame : Fragment() {
         if (!underScoreOrd.contains(Words("_"))) {
 
             Navigation.findNavController(requireView()).navigate(R.id.playGameToVundet)
-
         }
     }
 
     private fun tabtSpil() {
         if (lives == 0) {
+
             Navigation.findNavController(requireView()).navigate(R.id.playGameToTabt)
         }
     }
