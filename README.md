@@ -10,6 +10,6 @@ Derfor er alle mine commits ikke i denne repository
 Man starter spillet ved at trykke på 'start spil'-knappen, her bliver man taget til selve spillet. Der bliver valgt et tilfældigt ord fra kategorien.
 Man skal trykke på drej hjulet for at få et outcome af hjulet, dernæst trykker man på editText og indtaster et vilkårligt bogstav som man vil gætte. Når man har valgt et bogstav skal man trykke på den knap som lukker tastaturet, og bagefter trykkes på 'indtast bogstav'-knappen. Sådan fortsætter spillet indtil man vinder eller taber.
 
-<img src="startspil.png" width="100">
+<img src="startspil.png" width="250">
 
 
