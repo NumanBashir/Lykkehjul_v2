@@ -3,7 +3,7 @@
 ## Version 2
 Grunden til jeg har lavet en version 2 er fordi jeg var blevet færdig med hele spillet, men manglede en navigation component. 
 Derfor er alle mine commits ikke i denne repository.\
-Der er implementeret recyclerview for word/phrases, som det skulle i første version af afleveringen. Dette er dokumentationen for det er anvendt.
+Der er desuden implementeret recyclerview for word/phrases, som det skulle i første version af afleveringens NFR_5. Dette er dokumentationen for det er anvendt.
 
 ## How to play
 Man starter spillet ved at trykke på 'start spil'-knappen, her bliver man taget til selve spillet. Der bliver valgt et tilfældigt ord fra kategorien.
